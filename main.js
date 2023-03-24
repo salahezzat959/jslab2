@@ -1,4 +1,4 @@
-// TASK 1
+//& TASK 1
 
 var Nm =new RegExp("^[A-Za-z]$","ig");
 do {
@@ -25,7 +25,22 @@ console.log("Your phone number is " , phone)
 console.log("Your moblie number is " , moblie)
 console.log("Your emial is " , Email )
 
-// TASK 2
+//& Task 2
+
+function findLargestWord(str) {
+    let words = str.split(" ");
+    let largestWord = "";
+    for (let i = 0; i < words.length; i++) {
+    if (words[i].length > largestWord.length) {
+        largestWord = words[i];
+    }
+    }
+    return largestWord;
+}
+var par="welcome this is the test"
+console.log(findLargestWord(par))
+
+//& TASK 3
 
 var arr = [];
 for ( var i = 0 ; i<5 ; i++ ) {
@@ -39,7 +54,7 @@ document.write( '<FONT COLOR="black">',arr.sort(function(a,b){return a-b} ))
 document.write ( '<FONT COLOR="red">',"<br>" ,"<h4>" ,"Your Value after been sorted descending  ")
 document.write( '<FONT COLOR="black">',arr.sort(function(a,b){return b-a} ))
 
-// TASK 3 
+//& TASK 4
 
 var r = prompt("Enter the circle redius ");
 var area = Math.PI * Math.pow(r,2);
@@ -50,7 +65,6 @@ alert ( "The square root of " +ro +" is "+Math.sqrt(ro));
 
 var angle= prompt("Enter the angle")
 document.write( "<h3>" ,"Cos ", angle,"\u00B0", "  is   " , Math.cos(angle).toFixed(4))
-
 
 
 
